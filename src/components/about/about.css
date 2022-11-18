@@ -58,11 +58,27 @@
   width: 90%;
   background-color: rgb(255, 209, 92);
 }
-.html__skill {
+.javascript {
   width: 90%;
   background-color: rgb(255, 209, 92);
 }
-.reactjs {
+.html__skill {
+  width: 80%;
+  background-color: rgb(255, 209, 92);
+}
+.react__js {
+  width: 80%;
+  background-color: rgb(255, 209, 92);
+}
+.css__skill {
+  width: 70%;
+  background-color: rgb(255, 209, 92);
+}
+.git__skill {
+  width: 90%;
+  background-color: rgb(255, 209, 92);
+}
+.redux__skill {
   width: 90%;
   background-color: rgb(255, 209, 92);
 }
@@ -84,6 +100,8 @@
 }
 .about__img {
   margin-top: 10%;
+  height: 160px;
+  width: 160px;
 }
 @media screen and (max-width: 1024px) {
   .about__container {
@@ -100,6 +118,8 @@
   }
   .about__img {
     justify-self: center;
+    height: 160px;
+    width: 160px;
   }
   .about__box {
     flex-direction: column;
@@ -122,5 +142,18 @@
     grid-template-columns: repeat(2, 150px);
     row-gap: 1.5rem;
     justify-content: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .about__container {
+    grid-template-columns: 320px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .about__container {
+    grid-template-columns: 1fr;
+  }
+  .about__boxes {
+    grid-template-columns: 1fr;
   }
 }

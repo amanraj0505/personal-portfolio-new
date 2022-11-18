@@ -5,7 +5,7 @@ const Portfolio = () => {
   const [items, setItems] = useState(Menu);
   const filterItem = (categoryItem) => {
     const updatedItems = Menu.filter((curElem) => {
-      return curElem.category === categoryItem;
+      return String(curElem.category).includes(categoryItem);
     });
     setItems(updatedItems);
   };
@@ -25,18 +25,18 @@ const Portfolio = () => {
         <span
           className="work__item"
           onClick={() => {
-            filterItem("Creative");
+            filterItem("React");
           }}
         >
-          Creative
+          FRONTEND
         </span>
         <span
           className="work__item"
           onClick={() => {
-            filterItem("Design");
+            filterItem("POC");
           }}
         >
-          Design
+          POCs
         </span>
       </div>
 
@@ -51,7 +51,12 @@ const Portfolio = () => {
               </div>
               <span className="work__category">{category}</span>
               <h3 className="work__title">{title}</h3>
-              <a href="#" className="work__button">
+              <a
+                href={elem.link}
+                className="work__button"
+                target={"_blank"}
+                rel="noreferrer"
+              >
                 <i className="icon-link work__button-icon"></i>
               </a>
             </div>

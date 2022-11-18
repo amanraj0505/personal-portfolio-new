@@ -1,6 +1,44 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./contact.css";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
+  const notify = () => toast("Message Sent!!");
+  const form = useRef();
+  const sendEmail = (e) => {
+    const id = toast.loading("🤔 Sending message...");
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_jedb8ev",
+        "template_ttrhovy",
+        form.current,
+        "SxEUwQVRbAkf65faW"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          toast.update(id, {
+            render: "😍 Message Sent!!",
+            type: "success",
+            isLoading: false,
+            autoClose: 3000,
+          });
+          form.current.reset();
+        },
+        (error) => {
+          console.log(error.text);
+          toast.update(id, {
+            render: "🥴 Something Went Wrong!!",
+            type: "error",
+            isLoading: false,
+            autoClose: 3000,
+          });
+          form.current.reset();
+        }
+      );
+  };
   return (
     <section className="contact container section" id="contact">
       <h2 className="section__title">Get In Touch</h2>
@@ -13,13 +51,14 @@ const Contact = () => {
             Don't like forms? send me an email. 👋
           </p>
         </div>
-        <form action="" className="contact__form">
+        <form className="contact__form" ref={form} onSubmit={sendEmail}>
           <div className="contact__form-group">
             <div className="contact__form-div">
               <input
                 className="contact__form-input"
                 type={"text"}
                 placeholder="Type your name"
+                name="user_name"
               />
             </div>
 
@@ -28,29 +67,21 @@ const Contact = () => {
                 className="contact__form-input"
                 type={"email"}
                 placeholder="Type your email"
-              />
-            </div>
-
-            <div className="contact__form-div">
-              <input
-                className="contact__form-input"
-                type={"text"}
-                placeholder="Type your subject"
-              />
-            </div>
-
-            <div className="contact__form-div">
-              <input
-                className="contact__form-input"
-                type={"text"}
-                placeholder="Type your subject"
+                name="user_email"
               />
             </div>
           </div>
-
+          <div className="contact__form-div">
+            <input
+              className="contact__form-input"
+              type={"text"}
+              name="user_subject"
+              placeholder="Type your subject"
+            />
+          </div>
           <div className="contact__form-div contact__form-area">
             <textarea
-              name=""
+              name="message"
               id=""
               cols={"30"}
               row={"10"}
@@ -61,6 +92,7 @@ const Contact = () => {
           <button className="btn">Send Message</button>
         </form>
       </div>
+      <ToastContainer />
     </section>
   );
 };

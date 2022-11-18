@@ -1,7 +1,8 @@
 import React from "react";
 import "./about.css";
-import About1 from "../../assets/avatar-2.svg";
+import About1 from "../../assets/gamer.png";
 import AboutBox from "./AboutBox";
+import resume from "../../assets/resume_amanraj.pdf";
 const About = () => {
   return (
     <section className="about container section" id="about">
@@ -11,17 +12,12 @@ const About = () => {
         <div className="about__data grid">
           <div className="about__info">
             <p className="about__description">
-              I am a computer Science and Engineering Graduate from SRM
-              Institute of science and technology. I have about a year of
-              experience in development/coding. I am currently working in App
-              Dev team (DWS -IntelliServe) at Unisys. We use tech like React
-              Native, native Android and IOS for app development. I am currently
-              exploring and currently helping to bring certain EPA features to
-              the app level at the ease of the user while focusing on client
-              level customizations and configurations. Apps are currently live
-              on Apple App Store and Google Play Store.
+              Frontend Engineer and enthusiast current working in Engineeing
+              team Unisys India. Proficient in Hybrid app development and web
+              devempment using frameworks like React Native, React JS, HTML,
+              CSS, Javascript, Android and IOS debugging, problem solving etc.
             </p>
-            <a href="" className="btn">
+            <a href={resume} className="btn" target={"_blank"}>
               {" "}
               Download Resume
             </a>
@@ -40,8 +36,18 @@ const About = () => {
             </div>
             <div className="skills_data">
               <div className="skills__titles">
-                <h3 className="skills__names">HTML 5</h3>
+                <h3 className="skills__names">JavaScript</h3>
                 <span className="skills__number">90%</span>
+              </div>
+
+              <div className="skills__bar">
+                <div className="skills_percentage javascript"></div>
+              </div>
+            </div>
+            <div className="skills_data">
+              <div className="skills__titles">
+                <h3 className="skills__names">HTML</h3>
+                <span className="skills__number">80%</span>
               </div>
 
               <div className="skills__bar">
@@ -51,11 +57,41 @@ const About = () => {
             <div className="skills_data">
               <div className="skills__titles">
                 <h3 className="skills__names">React JS</h3>
+                <span className="skills__number">80%</span>
+              </div>
+
+              <div className="skills__bar">
+                <div className="skills_percentage react__js"></div>
+              </div>
+            </div>
+            <div className="skills_data">
+              <div className="skills__titles">
+                <h3 className="skills__names">CSS</h3>
+                <span className="skills__number">70%</span>
+              </div>
+
+              <div className="skills__bar">
+                <div className="skills_percentage css__skill"></div>
+              </div>
+            </div>
+            <div className="skills_data">
+              <div className="skills__titles">
+                <h3 className="skills__names">GIT</h3>
                 <span className="skills__number">90%</span>
               </div>
 
               <div className="skills__bar">
-                <div className="skills_percentage reactjs"></div>
+                <div className="skills_percentage git__skill"></div>
+              </div>
+            </div>
+            <div className="skills_data">
+              <div className="skills__titles">
+                <h3 className="skills__names">REDUX</h3>
+                <span className="skills__number">90%</span>
+              </div>
+
+              <div className="skills__bar">
+                <div className="skills_percentage redux__skill"></div>
               </div>
             </div>
           </div>
