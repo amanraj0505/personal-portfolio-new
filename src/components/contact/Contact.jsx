@@ -4,7 +4,6 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
-  const notify = () => toast("Message Sent!!");
   const form = useRef();
   const sendEmail = (e) => {
     const id = toast.loading("🤔 Sending message...");
@@ -18,7 +17,6 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
           toast.update(id, {
             render: "😍 Message Sent!!",
             type: "success",
