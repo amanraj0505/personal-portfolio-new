@@ -10,6 +10,14 @@ const data = [
   {
     id: 1,
     image: Image1,
+    title: "Girish Kumar",
+    subtitle: "Manager",
+    comment:
+      "  For development and contribution in core banking features like UPI and Fixed deposits. Proactive interaction with product managers, designers and QA team. Exceptional guidance to peers developers and taking the ownership of the feature.",
+  },
+  {
+    id: 1,
+    image: Image1,
     title: "Srivatshan Balasubramanian",
     subtitle: "Manager",
     comment:

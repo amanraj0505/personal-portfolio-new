@@ -11,7 +11,7 @@ const Portfolio = () => {
   };
   return (
     <section className="work container section" id="portfolio">
-      <h2 className="section__title">Recent Works</h2>
+      <h2 className="section__title">Projects</h2>
 
       <div className="work__filters">
         <span
@@ -25,18 +25,18 @@ const Portfolio = () => {
         <span
           className="work__item"
           onClick={() => {
-            filterItem("React");
+            filterItem("Live App");
           }}
         >
-          FRONTEND
+          Live Apps
         </span>
         <span
           className="work__item"
           onClick={() => {
-            filterItem("POC");
+            filterItem("Personal Portfolio");
           }}
         >
-          POCs
+          Personal Portfolio
         </span>
       </div>
 

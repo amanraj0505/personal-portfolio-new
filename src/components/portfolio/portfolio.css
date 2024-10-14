@@ -21,6 +21,8 @@
   overflow: hidden;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
+  justify-content: center;
+  align-items: center;
 }
 .work__mask {
   background: #6c6ce5;

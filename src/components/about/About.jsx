@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import "./about.css";
 import About1 from "../../assets/gamer.png";
@@ -12,10 +13,11 @@ const About = () => {
         <div className="about__data grid">
           <div className="about__info">
             <p className="about__description">
-              Frontend Engineer and enthusiast current working in Engineeing
-              team Unisys India. Proficient in Hybrid app development and web
-              devempment using frameworks like React Native, React JS, HTML,
-              CSS, Javascript, Android and IOS debugging, problem solving etc.
+              Software Engineer with 3+ years of experience in turning ideas
+              into clean code and building high-performance, scalable, and
+              user-friendly mobile applications. Working in App team at Kotak
+              811 (Kotak Mahindra Bank), on core banking features like UPI,
+              Credit Card, and Fixed Deposits.
             </p>
             <a href={resume} className="btn" target={"_blank"}>
               {" "}
@@ -46,7 +48,7 @@ const About = () => {
             </div>
             <div className="skills_data">
               <div className="skills__titles">
-                <h3 className="skills__names">HTML</h3>
+                <h3 className="skills__names">Typescript</h3>
                 <span className="skills__number">80%</span>
               </div>
 
@@ -66,8 +68,8 @@ const About = () => {
             </div>
             <div className="skills_data">
               <div className="skills__titles">
-                <h3 className="skills__names">CSS</h3>
-                <span className="skills__number">70%</span>
+                <h3 className="skills__names">MobX</h3>
+                <span className="skills__number">80%</span>
               </div>
 
               <div className="skills__bar">
@@ -87,6 +89,26 @@ const About = () => {
             <div className="skills_data">
               <div className="skills__titles">
                 <h3 className="skills__names">REDUX</h3>
+                <span className="skills__number">90%</span>
+              </div>
+
+              <div className="skills__bar">
+                <div className="skills_percentage redux__skill"></div>
+              </div>
+            </div>
+            <div className="skills_data">
+              <div className="skills__titles">
+                <h3 className="skills__names">Android</h3>
+                <span className="skills__number">90%</span>
+              </div>
+
+              <div className="skills__bar">
+                <div className="skills_percentage redux__skill"></div>
+              </div>
+            </div>
+            <div className="skills_data">
+              <div className="skills__titles">
+                <h3 className="skills__names">Firebase</h3>
                 <span className="skills__number">90%</span>
               </div>
 
