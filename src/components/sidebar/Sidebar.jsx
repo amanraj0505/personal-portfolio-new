@@ -49,7 +49,7 @@ const Sidebar = () => {
           </div>
         </nav>
         <div className="nav__footer">
-          <span className="copyright">&copy; 2022-2023</span>
+          <span className="copyright">&copy; 2023-2025</span>
         </div>
         <div
           className={toggle ? "nav__toggle nav__toggle-open" : "nav__toggle"}
