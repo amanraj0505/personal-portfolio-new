@@ -10,24 +10,24 @@ const data = [
   {
     id: 1,
     image: Image1,
-    title: "Girish Kumar",
-    subtitle: "Manager",
+    title: "Manager",
+    subtitle: "(Kotak811)",
     comment:
       "  For development and contribution in core banking features like UPI and Fixed deposits. Proactive interaction with product managers, designers and QA team. Exceptional guidance to peers developers and taking the ownership of the feature.",
   },
   {
     id: 1,
     image: Image1,
-    title: "Srivatshan Balasubramanian",
-    subtitle: "Manager",
+    title: "Manager",
+    subtitle: "(Unisys)",
     comment:
       " You have demonstrated quick learning on new technology areas and played an important role in multiple client implementations like DJO, Avianca, Baxter and ISA. Apart from individual contributions you have also helped the team to resolve issues. We appreciate your proactiveness and strong technical skills.",
   },
   {
     id: 2,
     image: Image3,
-    title: "Srivatshan Balasubramanian",
-    subtitle: "Manager",
+    title: "Manager",
+    subtitle: "(Unisys)",
     comment:
       "Appreciation for Development, completion and submission of Inteliapp Oneapp Mobile app into the app stores. We appreciate your proactiveness and strong technical skills and help.",
   },
